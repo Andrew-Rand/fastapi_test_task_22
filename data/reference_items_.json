@@ -1,0 +1,188 @@
+{
+"reference_items": [{
+		"Ident" : 43005,
+		"Cod" : 1,
+		"Name" : "Анкета 1",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "CDD93A620F09324A80445830E1102F7D"
+	},
+	{
+		"Ident" : 43005,
+		"Cod" : 2,
+		"Name" : "Анкета 2",
+		"Tip2" : 1,
+		"FlagDeleted" : false,
+		"UID" : "A3952D280088CA49AE9DB4583CDD5E08"
+	},
+	{
+		"Ident" : 43005,
+		"Cod" : 3,
+		"Name" : "Анкета 3",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "67AD5758004E194AB734FE662E372B15"
+	},
+	{
+		"Ident" : 43005,
+		"Cod" : 4,
+		"Name" : "Анкета 4",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "282D86AB8EDB0C4DB616A32946306C0E"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 1,
+		"Name" : "Кожные покровы",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "DE20A8B39EAAC64CBD13CE4734EB3717"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 2,
+		"Name" : "Полость рта, язык и глотка",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "6E82BE9CA01E904BAD1E1E5A884BBAD0"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 3,
+		"Name" : "Полость носа, околоносовые пазухи",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "5428982B989EAA42866F6041FDF4C035"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 4,
+		"Name" : "Шея",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "3795006F399DBE448793A30069ED357A"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 5,
+		"Name" : "Гортань",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "108A5C997C44F34E9763BD8EB54DACD6"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 6,
+		"Name" : "Молочные (грудные) железы",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "F6FEA66AD6521C49B21B7B7340BEA665"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 7,
+		"Name" : "Желудочно-кишечный тракт",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "6E6767065FF7B14DBA57AE13B7D71527"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 8,
+		"Name" : "Мочевой пузырь",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "FD699DDEC001B5438A0B99C6A36B9846"
+	},
+	{
+		"Ident" : 43010,
+		"Cod" : 9,
+		"Name" : "Предстательная железа",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "E7ECC25A0415184DBA83A3C09A16128F"
+	},
+	{
+		"Ident" : 79001,
+		"Cod" : 1,
+		"Name" : "Да",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "DE758F8E2168C344ACFC0B44CA0601E1"
+	},
+	{
+		"Ident" : 79001,
+		"Cod" : 2,
+		"Name" : "Нет",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "5672BFC58A0B064E9BBF85ACD8804827"
+	},
+	{
+		"Ident" : 79001,
+		"Cod" : 3,
+		"Name" : "Затрудняюсь",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "2E8D6ADEA3E41B4A876562F47B6EF0E0"
+	},
+	{
+		"Ident" : 79002,
+		"Cod" : 1,
+		"Name" : "Да",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "3610B77F60F2AC4C98FBB75CD8524861"
+	},
+	{
+		"Ident" : 79002,
+		"Cod" : 2,
+		"Name" : "Нет",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "CE060F3B6523D54E82B6C1F566D491A7"
+	},
+	{
+		"Ident" : 79002,
+		"Cod" : 3,
+		"Name" : "Затрудняюсь ответить",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "45BE6D565E4376449E7FB988EEDF1119"
+	},
+	{
+		"Ident" : 79003,
+		"Cod" : 1,
+		"Name" : "Да",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "D37D83248399D1438D18E90A327A4875"
+	},
+	{
+		"Ident" : 79003,
+		"Cod" : 2,
+		"Name" : "Нет",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "EDDDBC84F54F36449E55521F0B25CC38"
+	},
+	{
+		"Ident" : 79004,
+		"Cod" : 1,
+		"Name" : "V",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "E70238B74E9C7841AA5EDAE11C4A0016"
+	},
+	{
+		"Ident" : 79004,
+		"Cod" : 2,
+		"Name" : "X",
+		"Tip2" : 0,
+		"FlagDeleted" : false,
+		"UID" : "BD560A7E7585B3439DD36AC98CF88AAE"
+	}
+]}
+
+

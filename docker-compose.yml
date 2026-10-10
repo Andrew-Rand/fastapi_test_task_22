@@ -2,15 +2,15 @@ services:
   db:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-questionnaires}
-      POSTGRES_USER: ${POSTGRES_USER:-questionnaires}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-questionnaires}
+      POSTGRES_DB: ${POSTGRES_DB:-quests}
+      POSTGRES_USER: ${POSTGRES_USER:-quests}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-quests}
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-questionnaires} -d ${POSTGRES_DB:-questionnaires}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-quests} -d ${POSTGRES_DB:-quests}"]
       interval: 3s
       timeout: 3s
       retries: 20
@@ -20,7 +20,7 @@ services:
     env_file:
       - .env
     environment:
-      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-questionnaires}:${POSTGRES_PASSWORD:-questionnaires}@db:5432/${POSTGRES_DB:-questionnaires}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-quests}:${POSTGRES_PASSWORD:-quests}@db:5432/${POSTGRES_DB:-quests}
       DATA_DIR: /app/data
     ports:
       - "${APP_PORT:-8000}:8000"

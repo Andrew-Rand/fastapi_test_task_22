@@ -3,7 +3,7 @@ from httpx import AsyncClient
 
 from app.main import app, get_use_case
 from app.schemas import QuestionnaireDetail
-from app.service import QuestionnaireNotFound
+from app.use_case import QuestionnaireNotFound
 
 
 class TestHealth:

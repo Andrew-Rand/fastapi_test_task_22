@@ -8,7 +8,7 @@ from app.db import SessionFactory, engine, get_session
 from app.repository import QuestionnaireRepository
 from app.schemas import ErrorResponse, QuestionnaireDetail, QuestionnaireShort
 from app.seed import seed_data
-from app.service import QuestionnaireNotFound, QuestionnaireUseCase
+from app.use_case import QuestionnaireNotFound, QuestionnaireUseCase
 
 
 @asynccontextmanager

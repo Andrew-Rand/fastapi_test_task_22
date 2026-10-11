@@ -29,7 +29,7 @@ class QuestionnaireUseCase:
 
     async def get_item(self, cod: int) -> QuestionnaireDetail:
         questionnaire = await self.repository.get_questionnaire(cod)
-        if not questionnaire:
+        if not questionnaire or questionnaire.cod is None:
             raise QuestionnaireNotFound
 
         options = await self.repository.get_answer_options(cod)

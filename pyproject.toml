@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "medical-questionnaires"
+version = "0.1.0"
+description = "Read-only API for medical questionnaire templates"
+authors = ["OpenAI <noreply@openai.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = { version = "^0.30.0", extras = ["standard"] }
+sqlalchemy = { version = "^2.0.35", extras = ["asyncio"] }
+asyncpg = "^0.29.0"
+alembic = "^1.13.3"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+httpx = "^0.27.2"
+ruff = "^0.6.9"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

@@ -8,9 +8,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models import Question, ReferenceItem
 
 
-# def _uuid(value: str) -> UUID:
-#     # The source JSON uses 32-character hexadecimal UUIDs without hyphens.
-#     return UUID(value)
+def _uuid(value: str) -> UUID:
+    # For correct integrity checking
+    return UUID(value)
 
 
 async def seed_data(session: AsyncSession, data_dir: str) -> None:
@@ -27,8 +27,7 @@ async def seed_data(session: AsyncSession, data_dir: str) -> None:
     existing_questions = set((await session.scalars(select(Question.uid))).all())
 
     for row in reference_data:
-        # uid = _uuid(row["UID"])
-        uid = row["UID"]
+        uid = _uuid(row["UID"])
         if uid in existing_refs:
             continue
         session.add(
@@ -43,8 +42,7 @@ async def seed_data(session: AsyncSession, data_dir: str) -> None:
         )
 
     for row in question_data:
-        # uid = _uuid(row["UID"])
-        uid = row["UID"]
+        uid = _uuid(row["UID"])
         if uid in existing_questions:
             continue
         session.add(

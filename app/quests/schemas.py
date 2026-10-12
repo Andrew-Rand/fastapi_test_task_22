@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel
 
 
 class QuestionnaireShort(BaseModel):
@@ -36,7 +36,3 @@ class QuestionnaireDetail(BaseModel):
     name: str
     answer_options: list[AnswerOption]
     groups: list[QuestionGroup]
-
-
-class ErrorResponse(BaseModel):
-    detail: str

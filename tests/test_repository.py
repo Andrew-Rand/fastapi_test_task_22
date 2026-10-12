@@ -3,7 +3,7 @@ from typing import Any
 import pytest
 from sqlalchemy.dialects import postgresql
 
-from app.repository import QuestionnaireRepository
+from app.quests.repository import QuestionnaireRepository
 
 
 class ScalarRows:

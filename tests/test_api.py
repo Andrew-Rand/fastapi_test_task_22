@@ -1,10 +1,6 @@
 import pytest
 from httpx import AsyncClient
 
-from app.main import app, get_use_case
-from app.schemas import QuestionnaireDetail
-from app.use_case import QuestionnaireNotFound
-
 
 class TestHealth:
     @pytest.mark.asyncio

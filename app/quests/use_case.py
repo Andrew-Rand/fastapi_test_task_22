@@ -1,7 +1,7 @@
 from collections import defaultdict
 
-from app.repository import QuestionnaireRepository
-from app.schemas import (
+from app.quests.repository import QuestionnaireRepository
+from app.quests.schemas import (
     AnswerOption,
     QuestionGroup,
     QuestionOut,

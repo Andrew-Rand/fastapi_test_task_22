@@ -1,9 +1,14 @@
 from sqlalchemy import or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.const import QUESTIONNAIRE_IDENT_MARK, ANSWER_IDENT_SHIFT, QUESTION_GROUP_IDENT_MARK, QUESTION_CODE, \
-    QUESTION_COUNT_4_MARK
-from app.models import Question, ReferenceItem
+from app.quests.const import (
+    QUESTIONNAIRE_IDENT_MARK,
+    ANSWER_IDENT_SHIFT,
+    QUESTION_GROUP_IDENT_MARK,
+    QUESTION_CODE,
+    QUESTION_COUNT_4_MARK,
+)
+from app.quests.models import Question, ReferenceItem
 
 
 class QuestionnaireRepository:

@@ -6,7 +6,7 @@ from uuid import uuid4
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
 
-from app.schemas import QuestionnaireShort, QuestionnaireDetail, AnswerOption, QuestionGroup
+from app.quests.schemas import QuestionnaireShort, QuestionnaireDetail, AnswerOption, QuestionGroup
 
 # API unit tests don't require a database driver or a running PostgreSQL instance.
 _fake_db = ModuleType("app.db")
@@ -19,9 +19,10 @@ async def unused_get_session():
 
 
 _fake_db.get_session = unused_get_session
-sys.modules["app.db"] = _fake_db
+sys.modules["app.core.db"] = _fake_db
 
-from app.main import app, get_use_case  # noqa: E402
+from app.main import app
+from app.core.dependencies import get_use_case
 
 
 class FakeService:

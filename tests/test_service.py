@@ -4,7 +4,7 @@ from uuid import UUID, uuid4
 
 import pytest
 
-from app.use_case import QuestionnaireNotFound, QuestionnaireUseCase
+from app.quests.use_case import QuestionnaireNotFound, QuestionnaireUseCase
 
 
 def reference_item(

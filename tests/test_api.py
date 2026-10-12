@@ -1,10 +1,6 @@
 import pytest
 from httpx import AsyncClient
 
-from app.main import app, get_use_case
-from app.schemas import QuestionnaireDetail
-from app.use_case import QuestionnaireNotFound
-
 
 class TestHealth:
     @pytest.mark.asyncio
@@ -46,8 +42,27 @@ class TestGetQuestionnaire:
         assert data["groups"][0]["cod"] is None
         assert data["groups"][0]["name"] is None
 
-    @pytest.mark.asyncio
-    async def test_get_questionnaire_if_validation_error(self, async_client: AsyncClient) -> None:
-        resp = await async_client.get("/api/v1/questionnaires/not-an-integer")
+    class TestGetQuestionnaire:
+        @pytest.mark.asyncio
+        @pytest.mark.parametrize(
+            "cod",
+            [
+                "not-an-integer",
+                "abc",
+                "1.5",
+                " ",
+                "null",
+                "None",
+                "true",
+                None,
+                1.2,
+            ],
+        )
+        async def test_get_questionnaire_if_validation_error(
+                self,
+                async_client: AsyncClient,
+                cod: str,
+        ) -> None:
+            resp = await async_client.get(f"/api/v1/questionnaires/{cod}")
 
-        assert resp.status_code == 422
+            assert resp.status_code == 422
